@@ -1,0 +1,23 @@
+4. Write a class to calculate the uber price.
+
+
+Source Code:
+
+class Uber{
+    constructor(baseFare,costPerMin,timeInRide,costPerMile,rideDistance,bookingFee) {
+        this.baseFare = baseFare;
+        this.costPerMin = costPerMin;
+        this.timeInRide = timeInRide;
+        this.costPerMile = costPerMile;
+        this.rideDistance = rideDistance;
+        this.bookingFee = bookingFee;
+    }
+    get Price() {
+        return this.getPrice
+    }
+    getPrice() {
+      return  this.baseFare +(this.costPerMin * this.timeInRide) + (this.costPerMile * this.rideDistance) + (this.bookingFee)
+    }
+}
+let taxi = new Uber(100,2,20,12,30,120)
+console.log(taxi.Price())

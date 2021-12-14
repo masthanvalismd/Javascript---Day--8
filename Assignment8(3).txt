@@ -1,0 +1,19 @@
+3. Write a “person” class to hold all the details.
+
+Source Code:  
+
+class Person{
+    constructor(firstName, lastName, gender, age, dob, address, email, maritalStatus) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.gender = gender;
+        this.age = age;
+        this.dob = dob;
+        this.address = address;
+        this.email = email;
+        this.maritalStatus= maritalStatus;
+    }
+
+}
+let person = new Person("John", "Doe", "male", 22, "14 - 05 - 1999", "NYC", "jdoe@gmail.com", "no");
+console.log(person);

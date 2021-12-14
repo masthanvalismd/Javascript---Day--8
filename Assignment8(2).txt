@@ -1,0 +1,32 @@
+2. https://github.com/rvsp/typescript-oops/blob/master/Practice/class-circle.md
+
+
+Source Code :
+
+
+class Circle{
+setAttr(radius, color) {
+        this.radius = radius;
+    this.color = color;
+    }
+    getRadius() {
+    console.log(this.radius);
+    }    
+    
+    getColor() {
+        console.log(this.color);
+    }
+    getArea() {
+    console.log(this.radius*this.radius*3.14159)
+    }
+    getCircumference() {
+        console.log(2*3.14159*this.radius)
+    }
+    
+}
+let circle = new Circle()
+circle.setAttr("12", "red")
+circle.getRadius()
+circle.getColor()
+circle.getArea()
+circle.getCircumference()
